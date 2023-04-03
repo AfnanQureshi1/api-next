@@ -6,7 +6,7 @@ export default async function balance(req, res) {
     const balance = await provider.getBalance(address);
     const balanceFormat = ethers.utils.formatEther(balance);
 
-    res.json({ balance: balanceFormat })
+    res.json({ balance: balanceFormat });
 
 }
 // The following should be api endpoint for testing this api
